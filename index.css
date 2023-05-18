@@ -1,0 +1,754 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0c1126;
+}
+.bg-container{
+   
+    background-color:#0c1126;
+    transition: all 0.3s ease-in-out;
+    
+}
+.pageheader{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #0c1126;
+    
+    /* background-color: aqua; */
+}
+
+.logoAndtitle-container{
+    display: flex;
+    flex: 1.5;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+.logoAndtitle-container img{  
+    display: flex;
+    justify-content: space-between;  
+    margin-left: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    /* border-radius:50px; */
+}
+
+.logoAndtitle-container p{    
+    color: #fff;
+    font-weight: 600;
+    margin-right: 200px;
+}
+.searchboxandprofileContainer{
+    display: flex;
+    flex:2;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background-color: rgb(127, 131, 131); */
+
+}
+
+.search-box{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    margin-left: 22%;
+    background-color: #12183f;
+    color: #fff;
+    border-radius: 10px;
+    height: 40%;
+    
+}
+
+.search-box input{
+    font-size: 18px;
+    padding-left:10px;
+    padding-right:20px;
+    background-color: transparent;
+    margin-left:20px ;
+    margin-right:90px;
+    border: none;
+    outline: none;
+   
+    color: #fff;
+   
+}
+
+/* .search-box i{
+
+    color: white;
+} */
+
+.bellandprofile{
+    display: flex;
+    width: 30%;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+    /* background-color: red; */
+}
+
+.bellandprofile i{
+
+    color:white;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.bellandprofile img{
+    padding: 10px;
+    height:90px;
+    width: 90px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:700px;
+   background-color: #0c1126;
+    /* border: 2px  solid white; */
+}
+
+.main-left{
+    display: flex;
+    margin-left: 60px;
+    flex-direction: column;
+    width: 55%;
+    /* border: 1px solid white; */
+}
+
+.upper{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    height: 300px;
+    background-color: #14193c;
+    
+}
+.left-img{
+    width: 37%;
+    background-image: url(songs/cold-play.png);
+    background-size: contain;
+    /* object-fit: cover; */
+    height: 100%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    margin: 10px;
+    padding: 10px;
+    /* background-color: #14193c; */
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    
+}
+.large-text{
+    font-size: 20px;
+    color: #fff;
+    
+    
+}
+.small-text{
+    margin-left: 250px;
+    padding: 10px;
+    /* padding-left: 10px; */
+    font-size: 10px;
+    color: grey;
+}
+
+.band{
+    color: grey;
+    font-size: 12px;
+    margin-top: -6px;
+}
+.para{
+    color: grey;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    width: 120px;
+    height: 35px;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    background-image: linear-gradient(
+        to right,
+        #3725b1,
+        #4126b3,
+        #522cb8,
+        #6f33c2,
+        #7b36c7,
+        #973cd0,
+        #a641d7,
+        #b846dd,
+        #c148df
+      );
+    color: #fff;
+    border: none;
+}
+
+.btns span{
+    color: lightgrey;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.text{
+    margin-top: 10px;
+    color: lightgray;
+    font-size: 13px;
+}
+
+.lower{
+    /* position:absolute; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+   background-color: #0c1126;
+    /* border: 2px solid white; */
+
+}
+
+.lower-div{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* background-color: #973cd0; */
+    background-color:#151a30
+}
+
+.lower-div-left{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 100%;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.lower-left-image{
+    background-image: url(assets/queue/7rings.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+    
+}
+
+.lower-left-image1{
+    background-image: url(songs/queue-02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.lower-left-image2{
+    background-image: url(songs/queue-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+.lower-left-image3{
+    background-image: url(assets/queue/7rings.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+.lower-left-image4{
+    background-image: url(songs/queue-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+.lower-left-image5{
+    background-image: url(songs/queue-04.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+.lower-left-image6{
+    background-image: url(songs/queue-05.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 10px;
+}
+.lower-left-content{
+    margin-top: 5px;
+    margin-left:-20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.Dragon1{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 12px;
+
+}
+.band2{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 8px;
+    color: lightgrey;
+}
+.viewers1{
+    margin-top: 10px;
+    margin-left: 130px;
+    font-size: 10px;
+    color: grey;
+}
+
+.lower-div-right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    width: 30%;
+    /* border: 1px solid white; */
+}
+.asideupper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.title1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+
+.Artist{
+    /* margin: 5px; */
+    margin-top:-8px;
+    padding-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.viewers{
+    margin-left: 195px;
+    margin-top: -2px;
+    padding-right: 20px;
+    padding: 10px;
+    color: grey;
+    font-size: 10px;
+}
+
+.image1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 84px;
+    margin-top: -12px;
+    /* background-color: aqua; */
+}
+.imgage{
+    
+    height: 90%;
+    width:30%;
+    margin-top: -5px;
+    background-image: url(assets/queue/7rings.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}
+
+.content-band{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+.Dragon{
+    margin-top:5px;
+    color: white;
+    font-size: 15px;
+}
+.band1{
+    margin-top:5px;
+    color: grey;
+    font-size: 10px;
+}
+.dottedicon{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    color: grey;
+    margin-top: -5px;
+    margin-left: 80px;
+}
+.dottedicon .fa fa-ellipsis-h{
+    margin-left: 5px;
+}
+.dottedicon span{
+    font-size: 8px;
+}
+
+.image2{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 84px;
+   
+    margin-top: 3px;
+}
+
+.image3{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 83px;
+   
+    margin-top: 3px;
+}
+.icon1{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    margin-top: 30px;
+    margin: 10px;
+}
+.heart{
+    font-size: 15px;
+    margin-left: 20px;
+} 
+.plus{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.asidelower{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height:200px;
+    
+    /* border: 2px solid white; */
+}
+
+.played{
+    /* margin: 5px; */
+    margin-top:-8px;
+    padding-top: 10px;
+    color: white;
+    font-size: 19px;
+}
+.Dragon1{
+    color: white;
+}
+.viewers2{
+    margin-left: 200px;
+    margin-top: 2px;
+    padding-right: 20px;
+    padding: 10px;
+    color: grey;
+    font-size: 10px;
+}
+
+.asidelower{
+    display: flex;
+    flex-direction: column;
+    margin-top:-10px;
+    
+}
+
+.asidelower-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:4px;
+    width: 100%;
+    height: 80px;
+    /* background-color: #973cd0; */
+}
+
+.asidelower-left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+}
+
+.asidel0wer-left-image{
+    background-image: url(assets/queue/7rings.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 5px;
+}
+.asidel0wer-left-image1{
+    background-image: url(songs/queue-02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 5px;
+}
+.asidel0wer-left-image2{
+    background-image: url(songs/queue-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 5px;
+}
+.asidel0wer-left-image3{
+    background-image: url(songs/queue-01.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 5px;
+}
+.asidel0wer-left-image4{
+    background-image: url(songs/queue-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 60px;
+    margin-left: 5px;
+}
+.asidelower-left-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -20px;
+}
+
+.number1{
+    display: flex;
+    align-items: center;
+    /* margin-left: 5px; */
+    /* padding: 5px; */
+    color: white;
+    font-size: 10px;
+}
+
+.asidelowerright{
+    margin-right: 10px;
+    /* font-size: 10px; */
+}
+
+.footer{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    height:115px;
+    width: 100%;
+    background: rgb(50, 48, 48);
+    
+}
+
+.footer-div{
+    /* margin-top: -10px; */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid white; */
+    /* background: rgb(50, 48, 48); */
+    
+}
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 25%;
+    /* background: #3725b1; */
+    /* border: 1px solid #fff; */
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.song-image{
+    width: 70px;
+    height: 95%;
+    margin-left: 5px;
+    margin-top: 15px;
+    background-image: url(songs/zayn.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    /* background: black; */
+}
+
+.song-name{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.nav-link{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 25px;
+    /* color: grey; */
+    font-size: 12px;
+    margin-left: 10px;
+    gap: 10px;
+}
+.song-name #title{
+    font-size:13px;
+}
+.song-name #subtitle{
+    font-size: 10px;
+    
+}
+.footer-mid{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* align-items: center; */
+    margin-top: 15px;
+    
+}
+
+.player-control{
+    display: flex;
+    flex-direction:row;
+    color: gray;
+    gap:40px ;
+    margin-left: 25%;
+    font-size: 18px;
+    
+}
+.play-slider-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+.play-slider-container input{
+    width: 80%;
+    margin-left: 5px;
+}
+
+.subtitle{
+    /* color :grey; */
+    font-size: 12px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 25%;
+    /* background: green; */
+    margin-left: -40px;
+    margin-top:15px;
+}
+.player-extras{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left:20px;
+    gap: 10px;
+    color: gray;
+}
+
+.player-extras input{
+    width: 30%;
+}
+
